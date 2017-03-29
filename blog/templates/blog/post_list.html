@@ -7,6 +7,13 @@
             <h1><a href="http://peyderpey.net/">Uzay'ın Bloğu</a></h1>
         </div>
 
+		{% for post in posts %}
+		    <div>
+		        <p>published: {{ post.yayinlanma_tarihi }}</p>
+		        <h3><a href="">{{ post.baslik }}</a></h3>
+		        <p>{{ post.yazi|linebreaks }}</p>
+		    </div>
+		{% endfor %}
         <div>
             <p>published: 29.03.2017, 13:53</p>
             <h2><a href="http://peyderpey.net/">İlk Blogum</a></h2>
